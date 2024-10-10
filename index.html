@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeBee</title>
+    <!-- linking  font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/coffee-hero-section.png">
 </head>
@@ -17,6 +19,7 @@
                 <h2 class="logo-text">☕ CoffeeBee</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="" class="nav-link">Home</a>
                 </li>
@@ -36,6 +39,8 @@
                     <a href="" class="nav-link">contact</a>
                 </li>
             </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
     <main>
@@ -53,12 +58,13 @@
                         <a href="#" class="button contact-us">Contact US</a>
                     </div>
                 </div>
-               <div class="hero-image-wrapper">
-                <img src="images/coffee-hero-section.png" alt="Hero" class="hero-image">
-               </div> 
+                <div class="hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Hero" class="hero-image">
+                </div>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
