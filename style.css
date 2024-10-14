@@ -108,7 +108,7 @@ header .navbar {
   color: var(--title-color);
 }
 
-.hero-section .hero-details .hero-subtitle {
+.hero-section .hero-details .subtitle {
   font-size: medium;
   margin-top: 8px;
   max-width: 70%;
@@ -168,13 +168,13 @@ header .navbar {
   }
 
   .navbar #menu-close-button {
-    color: black;
+    color:var(--text-color);
     position: absolute;
     right: 30px;
     top: 30px;
   }
   .navbar #menu-open-button {
-    color: var(--primary-color);
+    color: var(--text-color);
   }
 
   .navbar .nav-menu {
@@ -194,11 +194,33 @@ header .navbar {
 
   body.show-mobile-menu .navbar .nav-menu {
     left: 0;
+    background:var(--page-background-color)
   }
   .navbar .nav-menu .nav-link {
-    color: black;
+    color: var(--text-color);
     font-size: large;
     display: block;
     margin-top: 17px;
+  }
+  .hero-section .section-content{
+    gap: 50px;
+    text-align: center;
+    padding: 30px, 20px, 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .hero-section .hero-details :is(.subtitle, .description) {
+    max-width: 100%;
+  }
+
+  .hero-section .hero-details .buttons{
+    justify-content: center;
+
+  }
+  .hero-section .hero-image-wrapper{
+    max-width: 270px;
+    margin-right: 0;
+
   }
 }
