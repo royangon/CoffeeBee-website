@@ -17,9 +17,10 @@
   --max-width: 100%;
   --title-color: #f79a29;
   --primary-color: white;
-  --about-section-background-color: #ffb6c1;
+  --about-section-background-color:  #ffe9ec;
   --circle-border-radius: 50%;
   --dark-color: #282828;
+  --light-pink-color: #ffe9ec;
 }
 
 /* styles for whole site */
@@ -167,7 +168,7 @@ header .navbar {
 /* About section styling */
 .about-section {
   padding: 120px 0;
-  background: var();
+  background: var(--about-section-background-color);
 }
 
 .about-section .section-content {
@@ -177,10 +178,12 @@ header .navbar {
   justify-content: space-between;
 }
 .about-section .about-image-wrapper .about-image {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
   width: 400px;
   height: 400px;
   object-fit: cover;
-  border-radius: var(--circle-border-radius);
+  
 }
 
 .about-section .about-details .section-title {
@@ -251,7 +254,17 @@ header .navbar {
 .menu-section .menu-list .menu-item .text {
   font-size: var(--font-size-m);
 }
-
+/* testimonial section styling */
+.testimonials-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+.testimonials-section .testimonial .user-image{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--circle-border-radius);
+}
 /* responsive media query code for max width 1024px */
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
@@ -356,11 +369,12 @@ header .navbar {
     width: calc(100% / 2 - 30px);
   }
   .menu-section .menu-list .menu-item .menu-image {
-    max-width:  200px;
+    max-width: 200px;
   }
 }
+
 /* responsive media query code for max width 640px */
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .menu-section .menu-list {
     gap: 60px;
   }
@@ -368,4 +382,3 @@ header .navbar {
     width: 100%;
   }
 }
-  
